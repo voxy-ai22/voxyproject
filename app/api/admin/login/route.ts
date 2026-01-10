@@ -22,8 +22,8 @@ export async function POST(request: NextRequest) {
       }, { status: 429 });
     }
 
-    const ADMIN_KEY = process.env.ADMIN_KEY || "GobelPrime12345";
-    const F2W_KEY = process.env.F2W_KEY || "123456";
+    const ADMIN_KEY = process.env.ADMIN_KEY || "";
+    const F2W_KEY = process.env.F2W_KEY || "";
 
     if (key === ADMIN_KEY || key === F2W_KEY) {
       // Success
